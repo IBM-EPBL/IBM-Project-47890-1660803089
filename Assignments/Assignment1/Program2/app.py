@@ -1,12 +1,12 @@
 from flask import Flask, render_template, request
 import requests
-app = Flask(__name__)
 import datetime 
 import numpy as num
 from dateutil.relativedelta import *
 from email_validator import validate_email, EmailNotValidError
 
 
+app = Flask(__name__)
 @app.route('/')
 def student():
    return render_template('index.html')
