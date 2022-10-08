@@ -5,10 +5,10 @@
        </head>
     <body>
         {% if result %}
-        <div class="content">
+        <div class="content" style="width: 60%;">
             <h3 style="text-align: center;border-bottom: 1px solid rgba(159, 158, 158, 0.2);">Did You Know???</h3>
          
-            <table style="border-bottom: 1px solid rgba(159, 158, 158, 0.2);margin-bottom: 10px;box-sizing: border-box;">
+            <table style="border-bottom: 1px solid rgba(159, 158, 158, 0.2);margin-bottom: 10px;box-sizing: border-box;width: 100%;">
            {% for key in result %}
               <tr>
                  <th> {{ key.question }} : </th>
