@@ -1,0 +1,43 @@
+body{
+    margin: 0px;
+    background-color: rgba(33, 32, 32, 0.9);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.content{
+    background-color: rgba(159, 158, 158, 0.2);
+    color: white;
+    width: 50%;
+    margin: 10rem auto;
+    padding: 40px 20px;
+    border-radius: 5px;
+}
+form{
+    display: table;
+    width: 100%;
+    border-spacing: 20px;
+    margin: 20px;
+}
+form > div{
+    display: table-row;
+}
+label,input{
+    width: 20%;
+    display: table-cell;
+}
+input{
+    width: 80%;
+    padding: 8px;
+}
+input[type="submit"]{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+}
+table {
+    border-spacing: 25px;
+}
+th,td{
+    color: white;
+    text-align: left;
+    margin: 8px 20px;
+}
