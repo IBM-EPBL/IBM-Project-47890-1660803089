@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--  Load CSS in Flask with html-->
+    <link rel="stylesheet" href='../static/main.css' />
+   </head>
+   <body>
+      <div class="content">
+         <h3 style="text-align: center;">Register</h3>
+      <form action = "http://localhost:5000/display" method = "POST">
+         <div><label>User Name</label><input type = "text" name = "User Name" required/></div>
+         <div><label>Email</label><input type = "email" name = "Email" required/></div>
+         <div><label>Phone Number</label><input type = "tel" name = "PhoneNumber" required/></div>
+         <p><input type = "submit" value = "Submit" /></p>
+      </form></div>
+    </body>
+</html>

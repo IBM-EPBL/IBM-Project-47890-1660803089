@@ -1,0 +1,16 @@
+<html>
+   <head>
+      <link rel="stylesheet" href='../static/main.css' /></head>
+   <body>
+      <div class="content">
+         <h3 style="text-align: center;border-bottom: 1px solid rgba(159, 158, 158, 0.2);">Hurrah! Registered Successfully!!!</h3>
+      <table>
+         {% for key, value in result.items() %}
+            <tr>
+               <th> {{ key }} : </th>
+               <td> {{ value }} </td>
+            </tr>
+         {% endfor %}
+      </table></div>
+   </body>
+</html>

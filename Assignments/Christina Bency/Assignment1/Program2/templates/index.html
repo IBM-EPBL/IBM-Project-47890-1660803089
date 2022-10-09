@@ -1,0 +1,33 @@
+<html>
+    <head>
+    <!--  Load CSS in Flask with html-->
+        <link rel="stylesheet" href='../static/main.css' />
+       </head>
+    <body>
+        {% if result %}
+        <div class="content" style="width: 60%;">
+            <h3 style="text-align: center;border-bottom: 1px solid rgba(159, 158, 158, 0.2);">Did You Know???</h3>
+         
+            <table style="border-bottom: 1px solid rgba(159, 158, 158, 0.2);margin-bottom: 10px;box-sizing: border-box;width: 100%;">
+           {% for key in result %}
+              <tr>
+                 <th> {{ key.question }} : </th>
+                 <td> {{ key.correctAnswer }} </td>
+              </tr>
+           {% endfor %}
+        </table>
+        <span>Age: {{age}}</span>
+    <span style="float: right;">Difficulty Level: {{difficulty}}</span>
+            </div>
+            {% else %}
+            <div class="content">
+                <h3 style="text-align: center;border-bottom: 1px solid rgba(159, 158, 158, 0.2);">Knowledge By Age</h3>
+             
+        
+        <form action="http://localhost:5000/quiz" method = "POST">
+            <div><label>Age</label><input type="date" name="dob"></div>
+            <input type="submit" value="Submit">
+        </form></div>
+        {% endif %}
+    </body>
+</html>

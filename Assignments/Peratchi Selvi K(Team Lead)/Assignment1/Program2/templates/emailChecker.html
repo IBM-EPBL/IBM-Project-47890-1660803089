@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <link rel="stylesheet" href='../static/main.css' />
+       </head>
+    <body>
+            <div class="content">
+                <h3 style="text-align: center;border-bottom: 1px solid rgba(159, 158, 158, 0.2);">MailId Validator</h3>
+             
+        
+        <form action="http://localhost:5000/emailChecker" method = "POST">
+            <div><label>Email</label><input type="email" name="email" value="{{mailid}}"></div>
+            <input type="submit" value="Submit">
+        </form>
+    
+        {% if isValid %}
+        <h3 style="text-align: center;">MailId is valid</h3>
+        {% elif isValid==false %}
+        <h3 style="text-align: center;">Mail Id is invalid</h3>
+
+        {% endif %}
+    </div></body>
+</html>
