@@ -19,7 +19,7 @@ class DevelopmentConfig(Config):
 
 class ProductionConfig(Config):
     SQLALCHEMY_DATABASE_URI = os.getenv("DATABASE_URL")
-    SESSION_REDIS = redis.from_url(os.getenv('REDIS_URL', 'redis://localhost:6379')) #2nd argument for local db is necessary for some reason because the production version keeps getting called in development.
+    SESSION_REDIS = redis.from_url(os.getenv('REDIS_URL', 'redis://localhost:6379'))
 
 class TestingConfig(Config):
     TESTING = True
